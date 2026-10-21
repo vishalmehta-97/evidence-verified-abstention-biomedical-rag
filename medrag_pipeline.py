@@ -10,7 +10,7 @@
 # ============================================================
 # CELL 1 — Install + mount Drive (run once)
 # ============================================================
-get_ipython().system('pip -q install -U transformers accelerate sentence-transformers faiss-cpu datasets scikit-learn pandas matplotlib tqdm')
+get_ipython().system('pip -q install -U transformers accelerate sentence-transformers faiss-cpu datasets scikit-learn "pandas<2.4" matplotlib tqdm')
 from google.colab import drive
 drive.mount('/content/drive')
 import os
